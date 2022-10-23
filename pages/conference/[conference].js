@@ -96,8 +96,8 @@ const ConferenceDetails = ({ conference, data }) => {
 					</div>
 					<div className='basis-3/4 mt-4 md:ml-8'>
 						{data.conference.partners.length > 0 ? (
-							data.conference.partners.map((partner) => (
-								<div className='flex mb-5'>
+							data.conference.partners.map((partner, i) => (
+								<div className='flex mb-5' key={i}>
 									<div className='basis-1/4'>
 										<img src={partner.image.url} alt='' className='w-28 h-24' />
 									</div>
